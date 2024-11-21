@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; display: flex; flex-direction: column; gap: 10px; font-family: Arial, sans-serif;">
+  <div style="display: flex; flex-direction: column;">
+    <label for="timestampStart" style="margin-bottom: 5px; font-size: 14px;">Timestamp Start</label>
+    <input type="text" id="timestampStart" placeholder="Enter timestamp start" style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 3px;">
+  </div>
+  <div style="display: flex; flex-direction: column;">
+    <label for="timestampEnd" style="margin-bottom: 5px; font-size: 14px;">Timestamp End</label>
+    <input type="text" id="timestampEnd" placeholder="Enter timestamp end" style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 3px;">
+  </div>
+  <div style="display: flex; flex-direction: column;">
+    <label for="valueStart" style="margin-bottom: 5px; font-size: 14px;">Value Start</label>
+    <input type="text" id="valueStart" placeholder="Enter value start" style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 3px;">
+  </div>
+  <div style="display: flex; flex-direction: column;">
+    <label for="valueEnd" style="margin-bottom: 5px; font-size: 14px;">Value End</label>
+    <input type="text" id="valueEnd" placeholder="Enter value end" style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 3px;">
+  </div>
+  <button onclick="generateCSV()" style="padding: 10px; font-size: 14px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Generar CSV
+  </button>
+</div>
+
+<div id="output" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background: #f9f9f9; font-family: monospace; white-space: pre-wrap; overflow: auto; max-height: 300px;">
+  <!-- El CSV generado aparecerá aquí -->
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>
